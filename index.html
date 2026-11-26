@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Your Name | Automotive Engineering Portfolio</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --surface: #f4f6f8;
+    --text: #1a1f24;
+    --muted: #5b6670;
+    --accent: #c8102e;
+    --border: #dde2e7;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #101418;
+      --surface: #1a2026;
+      --text: #e8ecef;
+      --muted: #9aa5ae;
+      --accent: #ff5a6e;
+      --border: #2a323a;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+  }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+  header.hero {
+    padding: 72px 0 56px;
+    border-bottom: 1px solid var(--border);
+  }
+  h1 { font-size: clamp(2rem, 5vw, 2.8rem); margin: 0 0 8px; letter-spacing: -0.02em; }
+  .headline { color: var(--accent); font-weight: 600; margin: 0 0 16px; }
+  .intro { color: var(--muted); max-width: 640px; margin: 0 0 24px; }
+  .links a {
+    display: inline-block;
+    margin: 0 10px 10px 0;
+    padding: 8px 16px;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    color: var(--text);
+    text-decoration: none;
+    font-size: 0.95rem;
+  }
+  .links a.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+  section { padding: 48px 0; border-bottom: 1px solid var(--border); }
+  section:last-of-type { border-bottom: none; }
+  h2 {
+    font-size: 1.35rem;
+    margin: 0 0 24px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-weight: 700;
+  }
+  .project {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 20px;
+  }
+  .project img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    display: block;
+    background: var(--border);
+  }
+  .project h3 { margin: 0 0 4px; font-size: 1.15rem; }
+  .meta { color: var(--muted); font-size: 0.9rem; margin: 0 0 12px; }
+  .project ul { padding-left: 20px; margin: 12px 0 0; }
+  .project li { margin-bottom: 6px; }
+  .tags { margin-top: 14px; display: flex; flex-wrap: wrap; gap: 8px; }
+  .tags span {
+    font-size: 0.8rem;
+    padding: 4px 10px;
+    border-radius: 6px;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    color: var(--muted);
+  }
+  .skills { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
+  .skills h4 { margin: 0 0 8px; font-size: 1rem; }
+  .skills p { margin: 0; color: var(--muted); font-size: 0.95rem; }
+  footer { padding: 40px 0; text-align: center; color: var(--muted); font-size: 0.9rem; }
+  footer a { color: var(--accent); }
+  @media (max-width: 600px) {
+    header.hero { padding: 48px 0 40px; }
+    section { padding: 36px 0; }
+    .project { padding: 18px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <h1>Your Name</h1>
+    <p class="headline">Automotive Engineering Student | Powertrain &amp; Chassis Design</p>
+    <p class="intro">
+      Third-year automotive engineering student at [Your University] with hands-on experience in
+      vehicle design, CAD, and competition engineering. I enjoy turning simulation results into
+      parts that work on track and on the road.
+    </p>
+    <div class="links">
+      <a class="primary" href="#">Download Resume (PDF)</a>
+      <a href="mailto:you@email.com">Email</a>
+      <a href="#">LinkedIn</a>
+      <a href="#">GitHub</a>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <h2>Projects</h2>
+
+    <article class="project">
+      <img src="https://placehold.co/1200x600?text=Project+Photo+or+CAD+Render" alt="Project photo or CAD render placeholder">
+      <h3>Formula SAE Front Suspension Redesign</h3>
+      <p class="meta">Suspension Lead | [Team Name], [Year]</p>
+      <p>
+        The previous front suspension was overweight and limited steering geometry adjustment.
+        I led the redesign of the upright and control arms in CAD, then validated the loads in FEA.
+      </p>
+      <ul>
+        <li>Reduced unsprung mass by [X]% while keeping the target safety factor.</li>
+        <li>Led a team of [N] members through design reviews and manufacturing.</li>
+        <li>Car placed [X] at [Competition] in [Year].</li>
+      </ul>
+      <div class="tags">
+        <span>SolidWorks</span><span>Ansys</span><span>Kinematics</span><span>Design for Manufacturing</span>
+      </div>
+    </article>
+
+    <article class="project">
+      <img src="https://placehold.co/1200x600?text=Project+Photo+or+Diagram" alt="Project photo or diagram placeholder">
+      <h3>Powertrain Test Data Analysis</h3>
+      <p class="meta">Data Analyst | [Course or Lab], [Year]</p>
+      <p>
+        I analyzed dyno test data from an engine test bench to identify torque and efficiency trends
+        across operating points, then presented recommendations for calibration changes.
+      </p>
+      <ul>
+        <li>Automated data processing in Python, cutting analysis time from [X] hours to [Y] minutes.</li>
+        <li>Identified a [X]% improvement in brake-specific fuel consumption at part load.</li>
+      </ul>
+      <div class="tags">
+        <span>Python</span><span>MATLAB</span><span>Data Visualization</span><span>Dyno Testing</span>
+      </div>
+    </article>
+
+    <article class="project">
+      <img src="https://placehold.co/1200x600?text=Project+Photo+or+Video+Still" alt="Project photo or video still placeholder">
+      <h3>Capstone: [Project Name]</h3>
+      <p class="meta">Team Member | [Course], [Year]</p>
+      <p>
+        A short description of the problem your team solved, the approach you took, and the outcome.
+      </p>
+      <ul>
+        <li>Your specific responsibility, such as modeling, prototyping, or testing.</li>
+        <li>A measurable result, such as a cost, weight, or performance improvement.</li>
+      </ul>
+      <div class="tags">
+        <span>Tool 1</span><span>Tool 2</span><span>Tool 3</span>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div>
+        <h4>Design &amp; CAD</h4>
+        <p>SolidWorks, CATIA, Creo, GD&amp;T, DFMEA</p>
+      </div>
+      <div>
+        <h4>Analysis &amp; Simulation</h4>
+        <p>Ansys, Abaqus, MATLAB/Simulink, vehicle dynamics</p>
+      </div>
+      <div>
+        <h4>Programming &amp; Data</h4>
+        <p>Python, C/C++, data acquisition, Excel</p>
+      </div>
+      <div>
+        <h4>Manufacturing &amp; Testing</h4>
+        <p>Machining, welding, 3D printing, instrumentation</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Experience &amp; Education</h2>
+    <p><strong>[Your University]</strong>, B.Eng. Automotive Engineering, Expected [Year]</p>
+    <p><strong>[Role]</strong>, [Company or Team], [Dates]</p>
+    <p>One or two lines on responsibilities and results.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>Contact: <a href="mailto:you@email.com">you@email.com</a> | [Phone] | [City, Country]</p>
+  </div>
+</footer>
+
+</body>
+</html>
